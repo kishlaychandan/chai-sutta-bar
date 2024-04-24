@@ -13,33 +13,30 @@
     />
   </head>
   <body>
-    <!-- language -->
+    
 
     <!-- nav start -->
-    <nav
-      class="flex justify-between items-center fixed top-0 left-0 w-screen h-28 bg-white"
-    >
+    <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-screen h-28 bg-white">
+      <!-- language -->
       <div class="language fixed top-0.5 right-32">
-        <div
-          class="bg-[#672717] w-[10rem] flex items-center justify-between hover:cursor-pointer"
-        >
+        <div class="bg-[#672717] w-[10rem] flex items-center justify-between hover:cursor-pointer">
           <div class="flex items-center px-1 py-1">
-            <img
-              class="w-6 h-auto inline"
+            <img class="w-6 h-auto inline"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/383px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
-              alt=""
-            />
+              alt=""/>
             <span class="text-white pl-1 text-xs">English</span>
           </div>
           <i class="fa-solid fa-caret-down text-white text-1 pr-2"></i>
         </div>
       </div>
       <div class="nav-left pl-5">
-        <img src="./images/chai-suta-bar.png" class="w-24" alt="" />
+        <img src="./images/chai-suta-bar.png" class="w-[6rem]" alt="" />
       </div>
 
-      <div class="nav-right">
-        <ul class="list-none flex text-lg">
+      <div class="nav-right flex flex-wrap">
+        <!-- <i class="fa-solid fa-bars min-[600px]:hidden"></i> -->
+        <ul class="list-none flex text-lg flex-wrap ">
+          <!-- max-[600px]:hidden  -->
           <li class="pr-7"><a href="#home">Home</a></li>
           <li class="pr-7"><a href="#home">About Us</a></li>
           <li class="pr-7"><a href="#home">Menu</a></li>
@@ -53,9 +50,9 @@
     <!-- Nav-End -->
 
     <!-- product start -->
-    <section class="section-1 w-screen overflow-hidden mt-[7rem] bg-red-500">
+    <section class="section-1 w-screen mt-[7rem] ">
       <img
-        class="bg-cover object-cover"
+        class="w-full object-cover"
         src="https://www.chaisuttabarindia.com/wp-content/uploads/2023/12/Maatea-website-banner-1-1536x534.webp"
         alt="chai-sutta-bar"
       />
@@ -63,42 +60,186 @@
     <!-- product end -->
 
     <!-- video start -->
-    <div class="section-2">
+    <section class="section-2">
       <video class="w-full" autoplay loop muted playsinline>
         <source src="https://www.chaisuttabarindia.com/wp-content/uploads/2023/11/550-Outlets-and-320-Cities-1920p.mp4#t=0.01" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </section>
     <!-- video end -->
 
+
+    <!-- Welcome To Chai Sutta Bar - Cuddle the Kulhad -->
     <!-- section 3 start -->
-    <div class="section-3 flex justify-center w-screen gap-8 ">
-      <div class="subsection-3-1 w-1/2 flex flex-col gap-4 py-5 bg-red-500">
-          <h3 class="welcome text-2xl font-semibold text-[#672717]">Welcome To Chai Sutta Bar</h3>
-          <h1 class="welcome-title text-4xl font-bold text-[#672717]">
-              Cuddle The Kulhad
-          </h1>
-          <p class="welcome-msg ">With over 4.5 Lakh Kulhad Chai every day, we brew the perfect experience of happiness and create
+    <section class="section-3 flex justify-center w-screen items-center max-[1464px]:flex-col">
+      <div class="subsection-3-1 w-1/3 flex justify-center items-center ">
+          <div class="flex flex-col gap-4 py-5 w-[35rem] justify-center  max-[600px]:items-center">
+            <h3 class="welcome text-3xl font-semibold text-[#672717] max-[600px]:text-[1.5rem]">Welcome To Chai Sutta Bar</h3>
+            <h1 class="welcome-title text-[3rem]  font-bold text-[#672717] max-[600px]:text-[2.4rem]">
+                Cuddle The Kulhad
+            </h1>
+            <p class="welcome-msg w-[26rem] text-lg text-justify">With over 4.5 Lakh Kulhad Chai every day, we brew the perfect experience of happiness and create
               soulful memories. We are synonymous with aromatic Kulhad Chai and platterful of cool vibes. </p>
-            <p>
+            <p class="w-[26rem] text-lg text-justify">
               We are India’s fastest growing chai-chain & franchise that started its journey back in 2016. We envision blending
               Kulhad’s health benefits with the most go-to-beverage “Chai” in India. Hailing from the commercial capital of Madhya
               Pradesh, we’re well known for our uniqueness and world-class service. We have a mission to serve a wishful cup of
               tea in every corner of the world.
             </p>
-          <p>Always Welcome To Join Us & Fall In Love With Tea Again.</p>
-          <button type="button" class="bg-[#19171a] px-4 w-[13rem] ml-8 mt-5 py-5 text-sm font-bold rounded-full text-white hover:bg-[#672717] hover:cursor-pointer">READ OUR STORY</button>
+            <p class="w-[26rem] text-lg text-justify">Always Welcome To Join Us & Fall In Love With Tea Again.</p>
+            <button type="button" class="bg-[#19171a] px-4 w-[13rem] ml-8 mt-5 py-5 text-sm font-bold rounded-full text-white hover:bg-[#672717] hover:cursor-pointer">READ OUR STORY</button>
+         </div>
       </div>
-      <div class="subsection-3-2 w-1/2  flex items-center bg-black" >
-          <img src="./images/chaisutabar.jpg" class="rounded-lg w-[30rem]" alt="msg-image" srcset="">
+      <div class="subsection-3-2 w-1/3  flex justify-center items-center max-[600px]:w-screen" >
+          <img src="./images/chaisutabar.jpg" class="rounded-lg w-[35rem] max-[600px]:w-3/4 py-[2rem]" alt="msg-image" srcset="">
+      </div>
+    </section>
+<!-- section 3 end -->
+
+
+<!-- Up To The Minute -->
+<!-- section 4 started -->
+    <section class="w-screen bg-yellow-950 my-5"> 
+      <div class="section-4-1 flex justify-center items-center flex-col">
+          <h1 class="text-white text-center text-5xl font-bold p-6">Up To The Minute</h1>
+          <div class="flex overflow-x-hidden w-4/5 mb-11 ">
+              <img class="inline-block mr-16 animate-slide  rounded-xl border-yellow-500 border-2"
+                  src="./images/s1.png" alt="" srcset="">
+              <img class="inline-block mr-16 animate-slide border-yellow-500 rounded-xl border-2" src="./images/s2.png" alt=""
+                  srcset="">
+              <img class="inline-block mr-16 animate-slide border-yellow-500 rounded-xl border-2" src="./images/s3.png" alt=""
+                  srcset="">
+              <img class="inline-block mr-16 animate-slide border-yellow-500 rounded-xl border-2" src="./images/s4.png" alt=""
+                  srcset="">
+              <img class="inline-block mr-16 animate-slide border-yellow-500 rounded-xl border-2" src="./images/s4.png" alt=""
+                  srcset="">
+              <!-- Add more slider items as needed -->
+          </div>
+        </div>
+      </section>
+<!-- section 4 ended -->
+
+
+<!-- Youtube video -->
+<!-- With Your Love & Support -->
+<!-- section 5 start -->
+<div class="section-5 w-screen bg-white py-[1rem]">
+  <div class="secton-5-1 flex justify-center h-screen p-1 rounded-3xl max-[600px]:h-auto max-[600px]:w-[95%]">
+      <iframe class="w-full h-full rounded-3xl" src="https://www.youtube.com/embed/HAsBtOjGOYQ"
+          title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="section-5-2 w-full text-[#672717] ">
+    <h1 class="text-center text-4xl font-bold my-8">With Your Love & Support</h1>
+    <div class="cards flex justify-center gap-[6rem] flex-wrap  ">
+      <div class="card flex flex-col items-center  max-[600px]:w-1/3">
+        <i class="fa-solid fa-store text-[3rem] py-4"></i>
+        <p class="text-black text-[2rem]">550+</p>
+        <h1 class="text-4xl font-bold ">Outlets</h1>
+      </div>
+      <div class="card flex flex-col items-center max-[600px]:w-1/3 ">
+        <i class="fa-solid fa-city text-[3rem] py-4" ></i>
+        <p class="text-black text-[2rem]">320+</p>
+        <h1 class="text-4xl font-bold">Cities</h1>
+      </div>
+      <div class="card flex flex-col items-center max-[600px]:w-1/3 ">
+        <i class="fa-solid fa-mug-hot text-[3rem] py-4"></i>
+        <p class="text-black text-[2rem]">4.5Lakh</p>
+        <h1 class="text-4xl font-bold">Kulhads/Day</h1>
+      </div>
+      <div class="card flex flex-col items-center max-[600px]:w-1/3 ">
+        <i class="fa-solid fa-whiskey-glass  text-[3rem] py-4 "></i>
+        <p class="text-black text-[2rem]">20,000Litre</p>
+        <h1 class="text-4xl font-bold">MilkUsed/Day</h1>
+      </div>
+    </div>
+</div>
+</div>
+<!-- section 5 end -->
+
+
+
+<!-- Chai Suta Bar- Untold Story -->
+<!-- section 6 start --> 
+<section class="section-3 flex my-[3rem] bg-[#672717] justify-center w-screen max-[1464px]:flex-col max-[1464px]:items-center">
+  <div class="subsection-3-1 w-1/3 flex justify-center items-center ">
+      <div class="flex flex-col gap-4 py-5 w-[34rem] max-[1464px]:items-center">
+        <h1 class="welcome-title text-5xl w-[24rem] font-bold text-white px-[0.5rem]">
+          Chai Sutta Bar -Untold Story
+        </h1>
+        <p class="w-[31rem] text-[1.1rem] text-white text-justify px-[1rem]">
+          “I remember the initial days of CSB where each new customer brought tons of joy and smiles to my and other team members’ face. And when any customer praised us for tasty chai, use of kulhad, or ambience, we were over nine clouds. At CSB, we always want that fire inside every member of CSB and crave that smile. Now, I love to hear stories from different corners of the world.”- Anubhav Dubey
+        </p>
+        <button type="button" class="bg-yellow-500 px-3 w-[11rem] ml-8 mt-5 py-4 text-sm font-bold rounded-full text-black hover:cursor-pointer">Know More!</button>
       </div>
   </div>
-    <!-- section 3 end -->
+  <div class="subsection-3-2 w-1/3  flex items-center max-[600px]:w-screen justify-center" >
+      <img src="./images/section6.png" class="rounded-lg w-[35rem] max-[600px]:w-3/4 py-[2rem]" alt="msg-image" srcset="">
+  </div>
+</section>
+<!-- section 6 end -->
 
-    <!-- Footer start -->
-    <section class="footer w-screen mt-[8rem] bg-[#672717]">
-      <div class="top flex justify-center gap-8 w-full pt-12">
-        <div class="w-[15rem] flex flex-col items-center justify-center gap-4">
+
+<!-- become a chai merchant -->
+<!-- section 7 start --> 
+<section class="section-3  flex flex-col text-white my-[3rem] w-screen items-center justify-center ">
+  <h1 class="text-center text-[3.5rem] font-bold text-[#45433e]">Become a chai Merchant</h1>
+  <h2 class="text-center text-[#672717] text-[2.5rem] font-medium">Why Choose Us ?</h2>
+  <!-- <hr class="w-[1rem] text-center text-[#19171a] font-bold"> -->
+  <div class="w-screen flex justify-center max-[1464px]:flex-col max-[1464px]:items-center">
+      <div class="subsection-3-1 w-1/3 flex items-center justify-center">
+        <div class="flex flex-col justify-center gap-4 py-5 w-[34rem] max-[1464px]:items-center">
+          <p class="w-[27rem] text-[1.1rem]  text-[#193243] text-justify">
+            The vision of Chai Sutta Bar(CSB) is to deliver our unique cultural blend and values to each corner of the world. We started 7 years back, and we have accomplished great tasks and achieved incredible milestones. The <b class="text-black">550+ franchise outlets, 320+ cities,</b> countless <i> kulhads,</i> and global presence say it all. Without any boundaries, Chai Sutta Bar is now spreading with wings made of people’s love and affection. Franchise partners of Chai Sutta Bar(CSB) are enjoying massive margins and impeccable growth every year. It’s super easy to start a journey with a tested, tried, and high-ROI-driven business model. With tea becoming the most consumed beverage, this industry has vast growth potential.<b class="text-black"> Take the first step and become a part of the family that is ever-growing. Partner with the most trusted brand in the market.</b>
+          </p>
+          <button type="button" class="bg-[#19171a] px-4 w-[13rem] ml-8 mt-5 py-5 text-sm font-bold rounded-full text-white hover:bg-[#672717] hover:cursor-pointer">READ OUR STORY</button>
+        </div>
+    </div>
+    <div class="subsection-3-2 w-1/3  flex items-center max-[600px]:w-screen justify-center" >
+        <img src="./images/section7.png" class="rounded-lg w-[35rem] max-[600px]:w-3/4 py-[2rem]" alt="msg-image" srcset="">
+    </div>
+  </div>
+</section>
+<!-- section 7 end -->
+
+
+
+<!-- Our stories -->
+<!-- section 8 started -->
+<section class="w-full bg-yellow-950 my-5">
+  <div class="section-8-1 flex justify-center items-center flex-col">
+      <h1 class="text-white text-center text-5xl font-bold p-6">Our <span class="text-yellow-500">Stories</span></h1>
+      <div class="flex flex-row gap-10 w-4/5 mb-11">
+          <a href="https://www.youtube.com/watch?v=FcGcuRXRKn0"  target="_blank">
+              <img class="border-yellow-500 rounded-xl border-2" src="./images/s8c.png" alt="" srcset="">
+          </a>
+          <a href="https://www.youtube.com/watch?v=AL8-TiZFgmw"  target="_blank">
+              <img class="border-yellow-500 rounded-xl border-2" src="./images/s8d.png" alt="" srcset="">
+          </a>
+          <a href="https://www.youtube.com/watch?v=KSx9CrKU60o" target="_blank" >
+              <img class="border-yellow-500 rounded-xl border-2" src="./images/s8a.png" alt="" srcset="">
+          </a>
+          
+      </div>
+  </div>
+</section>
+<!-- section 8 ended -->
+
+
+
+<!-- Request For Franchise -->
+<!-- section -9 staterd -->
+<section class="flex flex-col justify-center items-center gap-[1rem]">
+  <h4 class="text-[#b39a87] text-2xl">Want To Franchise With Us?</h4>
+  <h1 class="text-black text-4xl text-center font-bold">Request A Free Franchise Consultation</h1>
+  <button class="bg-[#672717] text-white px-[3rem] py-4 rounded-[6rem] mt-[1.5rem]">Apply Now</button>
+</section>
+<!-- section -9 end -->
+
+
+<!-- Footer start -->
+    <section class="footer w-screen mt-[2rem] bg-[#672717]  ">
+      <div class="top flex justify-center gap-8 w-full pt-12 max-[700px]:flex-wrap">
+        <div class="w-[15rem] flex flex-col items-center justify-center gap-4 max-[700px]:flex-wrap max-[700px]:w-4/5">
           <img class="w-20" src="./images/chai-suta-bar.png" alt="" />
           <p class="text-white">
             Chai Sutta Bar Is A Rapidly Growing Tea-Chain, Founded In 2016 By
@@ -106,40 +247,50 @@
             Nayak.
           </p>
         </div>
-        <div class="w-[15rem] flex flex-col justify-center gap-2">
+        <!-- head office -->
+        <div class="w-[15rem] flex flex-col justify-center gap-2 max-[600px]:flex-wrap max-[600px]:w-4/5">
           <h1 class="text-white text-2xl font-bold">Head Office</h1>
-          <div class="flex items-center gap-2 text-white">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>
-              1st Floor, Redsquare, PU3 Commercial Scheme no 54, Opposite C21
-              Mall, Indore, MP- 452001
-            </p>
-          </div>
-          <div class="flex items-center gap-2 text-white">
-            <i class="fa-solid fa-phone"></i>
-            <p>6262 3000 31</p>
-          </div>
-          <div class="flex items-center gap-2 text-white">
-            <i class="fa-regular fa-envelope"></i>
-            <p>info@chaisuttabarindia.com</p>
-          </div>
-          <div class="flex items-center gap-2 text-white">
-            <i class="fa-regular fa-envelope"></i>
-            <p>business@chaisuttabarindia.com</p>
-          </div>
+          <a target="_blank" href="https://www.google.com/maps/place/Chai+Sutta+Bar+Private+Limited+-+Head+Office/@22.7453475,75.8924399,15z/data=!4m6!3m5!1s0x3962fd4017b7581f:0x591a32ca4baa38d1!8m2!3d22.7453475!4d75.8924399!16s%2Fg%2F11tbz56sdz?entry=tts&shorturl=1">
+            <div class="flex items-center gap-2 text-white">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                1st Floor, Redsquare, PU3 Commercial Scheme no 54, Opposite C21
+                Mall, Indore, MP- 452001
+              </p>
+            </div>
+          </a>
+          <a href="tel:+916262300031">
+            <div class="flex items-center gap-2 text-white">
+              <i class="fa-solid fa-phone"></i>
+              <p>6262 3000 31</p>
+            </div>
+          </a>
+          <a href="mailto:info@chaisuttabarindia.com">
+            <div class="flex items-center gap-2 text-white">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@chaisuttabarindia.com</p>
+            </div>
+          </a>
+          <a href="mailto:business@chaisuttabarindia.com">
+            <div class="flex items-center gap-2 text-white">
+              <i class="fa-regular fa-envelope"></i>
+              <p>business@chaisuttabarindia.com</p>
+            </div>
+          </a>
         </div>
-        <div class="w-[10rem] flex flex-col gap-2">
+        <!-- quick links -->
+        <div class="w-[10rem] flex flex-col gap-2 max-[600px]:flex-wrap max-[600px]:w-1/4">
           <h1 class="text-white text-2xl font-bold">Quick Links</h1>
           <ul class="flex flex-col items-start justify-start gap-1 text-white">
-            <li>Contact</li>
-            <li>FAQs</li>
-            <li>Locations</li>
-            <li>Privacy Policy</li>
-            <li>Careers</li>
-            <li>Blog</li>
+            <a href=""><li>Contact</li></a>
+            <a href=""><li>FAQs</li></a>
+            <a href=""><li>Locations</li></a>
+            <a href=""><li>Privacy Policy</li></a>
+            <a href=""><li>Careers</li></a>
+            <a href=""><li>Blog</li></a>
           </ul>
         </div>
-        <div class="w-[20rem] flex flex-col gap-2">
+        <div class="w-[20rem] flex flex-col gap-2 max-[600px]:flex-wrap max-[600px]:w-2/4">
           <h1 class="text-white text-2xl font-bold">Subscribe Now</h1>
           <div class="flex flex-col gap-4 text-white">
             <input
@@ -153,16 +304,16 @@
               Submit
             </button>
             <div class="text-white flex gap-3 text-2xl pt-5">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-youtube"></i>
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook cursor-pointer"></i>
+              <i class="fab fa-twitter cursor-pointer"></i>
+              <i class="fab fa-linkedin cursor-pointer"></i>
+              <i class="fab fa-youtube cursor-pointer"></i>
+              <i class="fab fa-instagram cursor-pointer"></i>
             </div>
           </div>
         </div>
       </div>
-      <div class="w-screen text-white py-8">
+      <div class="w-screen text-white py-8 max-[600px]:flex-wrap">
         <p class="text-center">Copyright ©2024 Chai Sutta Bar,</p>
         <p class="text-center">
           All rights reserved | Designed, Developed & Maintained by TMG
@@ -171,4 +322,32 @@
     </section>
     <!-- Footer End -->
   </body>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @media (max-width: 650px) {
+            :root {
+                font-size: 12px;
+            }
+        }
+        /* nav>div>ul{
+          font-size: 0.8rem;
+        } */
+
+     @keyframes slide {
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+          transform: translateX(-100%);
+      }
+  }
+  .animate-slide {
+    animation: slide 22s linear infinite; /* Adjust animation duration */
+  }
+</style>
+
 </html>
