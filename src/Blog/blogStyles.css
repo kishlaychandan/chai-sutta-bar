@@ -1,539 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media only screen and (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "nav" "cover" "image" "form" "wwr" "ta" "p" "fc" "bv" "youtube" "fofo" "model" "coco" "outlet1" "outlet2" "outlet3"
-                             "head" "owners" "footer" "f1";
-    }
-}
-
 body {
     height: 100vh;
-    font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
-    z-index: 9;
-    grid-area: nav;
+  z-index: 9;
 }
 
-.cover-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Ensures the image doesn't overflow the container */
-    grid-area: cover;
+.blog > .blog1 {
+    background-color: #672717;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    height: 8rem;
 }
 
-.cover-container img {
-    max-width: 100%; /* Ensures the image never exceeds the container's width */
-    max-height: 100%; /* Ensures the image never exceeds the container's height */
-    display: block; /* Removes any default inline styling */
-    margin: auto; /* Centers the image horizontally */
-}
-
-/* Franchise Form */
-
-.franchise-form > .grid-container {
+.grid-container {
     display: grid;
-    grid-template-areas:
-    'image form'
-    'image form';
-    grid-gap: 0;
-    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 0 10%;
 }
-
-.franchise-form > .grid-container > .item1, .item2 {
-    flex: 1;
-    box-sizing: border-box;
-}
-
-.franchise-form > .grid-container > .item1 > .form-image {
-    max-width: 100%;
-    height: 120%;
-}
-
-.franchise-form > .grid-container > .item1 { 
-    grid-area: image; 
-}
-
-.franchise-form > .grid-container > .item2 > form > h1 {
-    font-size: 3rem;
-}
-
-.franchise-form > .grid-container > .item2 { 
-    grid-area: form; 
-    transform: translateX(-50%);
-}
-
-.franchise-form > .grid-container > div {
+  
+.grid-container > div {
+    background-color: transparent;
+    border: 1px solid ghostwhite;
+    box-shadow: 0px 0px 5px 1px #888888;
     text-align: left;
-    font-size: 30px;
-}
-
-.franchise-form > .grid-container > .item1 > img {
-    padding-left: 10%; 
-    width: 65%;
-    height: 100%;
+  /*  padding: 20px 20px; */
+    font-size: 20px;
     border-radius: 15px 15px 15px 15px;
 }
 
-.franchise-form > .grid-container > .item2 > form > input {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
-  /*  transform: translateX(-45%); */
+.grid-container > .item  > a {
+       text-decoration: none;
+       color: #303133;
+       text-align: left;
+       padding: 20px 20px;
+       font-size: 25px;
 }
 
-.franchise-form > .grid-container > .item2 > form > .button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+.grid-container > div > a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 40%;
-  /*  transform: translateX(-100%); */
+    color: #303133;
+    text-align: left;
+    padding: 0 20px;
 }
 
-.franchise-form > .grid-container > .item2 > form > .button1 {
-    background-color: #672717;
-}
-
-.franchise-form > .grid-container > .item2 > form > input[type=text] {
-    border-radius: 10px;
-    border: 1px solid #672717;
+.grid-container > .item > a:hover {
+    text-decoration: none;
     color: #672717;
+}
+
+.grid-container > .item > img {
     width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: small;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 15px 15px;
 }
 
-.franchise-form > .grid-container > .item2 > form > input[type=text]:focus {
-    outline: none;
-    border: 1px solid #672717;
-    color: #672717;
-    font-size: small;
-}
-
-.franchise-form > .grid-container > .item2 > form > input::placeholder {
-    color: #672717;
-    font-weight: bold;
-    font-size: small;
-}
-
-/* Why we rock */
-
-.item1 { grid-area: wwr; }
-.item2 { grid-area: ta; }
-.item3 { grid-area: p; }
-.item4 { grid-area: fc; }
-.item5 { grid-area: bv; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'wwr wwr ta p'
-    'wwr wwr fc bv';
-  gap: 10px;
-  /* background-color: #2196F3; */
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: justify;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-.why-we-rock > .grid-container {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.why-we-rock > .grid-container > .item1 {
-    font-size: medium;
-}
-
-.why-we-rock > .grid-container > .item2 {
-    padding: 10%;
-    font-size: medium;
-}
-
-.why-we-rock > .grid-container > .item3 {
-    padding: 10%;
-    font-size: medium;
-}
-
-.why-we-rock > .grid-container > .item4 {
-    padding: 10%;
-    font-size: medium;
-}
-
-.why-we-rock > .grid-container > .item5 {
-    padding: 10%;
-    font-size: medium;
-}
-
-
-.why-we-rock > .grid-container > .item1 > h1 {
-    font-size: 50px;
-    color: #672717;
-    text-align: center;
-}
-
-.why-we-rock > .grid-container > .item2 > h1 {
-    font-size: 30px;
-    color: #672717;
-    text-align: center;
-}
-
-.why-we-rock > .grid-container > .item3 > h1 {
-    font-size: 30px;
-    color: #672717;
-    text-align: center;
-}
-
-.why-we-rock > .grid-container > .item4 > h1 {
-    font-size: 30px;
-    color: #672717;
-    text-align: center;
-}
-
-.why-we-rock > .grid-container > .item5 > h1 {
-    font-size: 30px;
-    color: #672717;
-    text-align: center;
-}
-
-.why-we-rock > .grid-container > .item2 .fa-solid,
-.item3 .fa-solid,
-.item4 .fa-solid,
-.item5 .fa-brands {
-    background-color: #672717; /* Brown background color for icons */
-    padding: 15px; /* Increase padding for larger icons */
-    border-radius: 50%; /* Make icons circular */
-    color: #fff; /* Icon color */
-    font-size: 50px; /* Increase font size for larger icons */
-    transform: translateX(100%);
-}
-
-.container > .yt-video {
-    grid-area: youtube;
-}
-
-/* Franchise Models */
-
-.franchise-models > .grid-container > .item1 {
-    padding-left: 20%;
-    padding-top: 20%;
-    border: 1px solid #672717;
-}
-
-.franchise-models > .grid-container > .item3 {
-    padding-right: 20%;
-    padding-top: 20%;
-}
-
-.franchise-models > .grid-container > .item2 > .title {
-    color: white;
-    font-weight: bolder;
-    font-size: larger;
-}
-
-.franchise-models > .grid-container > .item2 > .title > img {
-   /* padding-left: 25%; */
+.grid-container > .item > img:hover {
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
-.franchise-models > .grid-container > .item1 > .title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.grid-container > .item59 {
+    border-color: transparent;
+    box-shadow: none;
 }
 
-.franchise-models > .grid-container > .item1 > .definition {
-    margin-bottom: 5px;
-    color: #FFCF13;
-    font-size: large;
-    font-weight: bold;
-}
 
-.franchise-models > .grid-container > .item1 > .example {
-    margin-bottom: 5px;
-}
 
-.franchise-models > .grid-container > .item1 > .title > .store-icon {
-    background-color: #FFCF13;
-    fill: #672717;
-    color: #672717;
-    font-size: 50px;
-    border-radius: 50%;
-    width: 50px; /* Set width */
-    height: 50px; /* Set height */
-    padding: 10px; /* Increase padding to make the background bigger */
-}
-
-.franchise-models > .grid-container > .item1 > .description {
-    color: white;
-    font-size: large;
-}
-
-.franchise-models > .grid-container > .item3 > .description {
-    color: white;
-    font-size: large;
-}
-
-.franchise-models > .grid-container > .item3 > .title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.franchise-models > .grid-container > .item3 > .definition {
-    margin-bottom: 5px;
-    color: #FFCF13;
-    font-size: large;
-    font-weight: bold;
-}
-
-.franchise-models > .grid-container > .item3 > .example {
-    margin-bottom: 5px;
-}
-
-.franchise-models > .grid-container > .item3 > .title > .store-icon {
-    background-color: #FFCF13;
-    fill: #672717;
-    color: #672717;
-    font-size: 50px;
-    border-radius: 50%;
-    width: 50px; /* Set width */
-    height: 50px; /* Set height */
-    padding: 10px; /* Increase padding to make the background bigger */
-}
-
-.franchise-models > .grid-container > .item1 { grid-area: fofo; }
-
-.franchise-models > .grid-container > .item2 { grid-area: model; }
-
-.franchise-models > .grid-container > .item3 { grid-area: coco; }
-
-.franchise-models > .grid-container {
-  display: grid;
-  grid-template-areas: 'fofo model coco';
-  grid-gap: 10px;
-  background-color: #672717;
-  padding: 10px;
-}
-
-.franchise-models > .grid-container > div {
-  background-color: #672717;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-/* Outlets */
-
-.container > .outlets > .outlet > .row > .a { 
-    grid-area: outlet1;
-}
-
-.container > .outlets > .outlet > .row > .b { 
-    grid-area: outlet2;
-}
-
-.container > .outlets > .outlet > .row > .c { 
-    grid-area: outlet3;
-} 
-
-.outlets > .outlet > .row {
-    display: flex;
-    padding-left: 10%;
-}
-
-/* Create three equal columns that sit next to each other */
-.outlets > .outlet > .column {
-    flex: 1;
-    padding: 5px;
-    margin-right: 10px; /* Adjust the gap between columns */
-    margin-bottom: 10px; /* Adjust the gap between rows */
-}
-
-/* Remove right margin from the last column */
-.outlets > .outlet > .column:last-child {
-    margin-right: 0;
-}
-
-.outlets > .outlet > .row > .column > .button {
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 20px;
-      margin: 4px 2px;
-      cursor: pointer;
-}
-    
-.outlets > .outlet > .row > .column > .button1 {
-    background-color: #672717;
-    color: #FFCF13;
-    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
-    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
-    border: none; 
-    transform: translateX(125%);
-}
-
-.outlets > .outlet > .row > .column > .button2 {
-    background-color: #672717;
-    color: #FFCF13;
-    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
-    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
-    border: none; 
-    transform: translateX(100%);
-}
- 
-.outlets > .outlet > .row > .column > .button1:hover {
-    background-color: #FFCF13;
-    color: black;
-    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
-    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
-    border: none;
-}
-
-.outlets > .outlet > .row > .column > .button2:hover {
-    background-color: #FFCF13;
-    color: black;
-    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
-    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
-    border: none;
-}
-
-.outlets > .outlet > h1 {
-    text-align: center; 
-    font-size: 60px;
-    color: #575656;
-    grid-area: outlet1;
-}
-
-/* Franchise Owners */
-
-.container > .franchise-owners > .grid-container > .item1 {
-    grid-area: header;
-    background-color: #672717;
-}
-
-.container > .franchise-owners > .grid-container > .item1 > h1 {
-    font-size: 3rem;
-    transform: translateX(65%);
-}
-
-.container > .franchise-owners > .grid-container > .item1 > p {
-    transform: translateX(65%);
-}
-
-.container > .franchise-owners > .grid-container > .item2 > img {
-    height: 100%;
-    position: relative;
-}
-.franchise-owners > .grid-container > .item2 {
-    grid-area: image;
-    background-color: #672717;
-}
-
-.franchise-owners > .grid-container > .item1 {
-    grid-area: head;
-}
-
-.franchise-owners > .grid-container > .item2 {
-    grid-area: owners;
-}
-
-.franchise-owners > .grid-container {
-    display: grid;
-    grid-template-areas:
-    'header'
-    'image';
-  /*  grid-gap: 10px; */
-    background-color: #672717;
-    padding: 10px;
-}
-
-.franchise-owners > .grid-container > div {
-    background-color: #672717;
-    text-align: center;
-   /* padding: 20px 0; */
-    font-size: 30px;
-}
-
-.franchise-owners > .grid-container > .item2 > .owner-image {
-        height: 100%;
-        width: 70%;
-        flex-grow: 0;
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        animation: scrollAnimation 20s linear infinite;
-}
-    
-@keyframes scrollAnimation {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(-100%);
-        }
-}
-
-.franchise-owners > .grid-container > .item2 {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-      /*  overflow-x: scroll; */
-}
-
-/* Footer */
-
-.container > .footer {
-    grid-area: footer;
-}
-
-.footer > h3 {
-    color: #928781;
-    font-size: 25px;
-}
-
-.footer > h1 {
-    color: #000000;
-    font-size: 50px;
-}
-
-.footer > .button {
-       background-color: #672717;
-       color: white;
-       border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
-       padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
-       border: none;  
-       font-size: 20px;
-}
-   
-.container > .footer .w-screen {
-    grid-area: f1;
-}
 
 
 
