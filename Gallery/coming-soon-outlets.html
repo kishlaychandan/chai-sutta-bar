@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<main>
+  <!-- nav start -->
+  <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-full h-28 bg-white">
+    <label for="" class="language fixed top-0.5 right-32">
+      <select name="course" id="course" class="bg-[#672717] w-[10rem] text-white border-none">
+          <option value="1">
+            <span><img class="w-6 h-auto inline"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/383px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
+            alt="img here"/></span>&#x1F1FA;&#x1F1F8; <span class="text-white pl-1 text-xs">English</span>
+          </option>
+          <option value="2">
+            <img class="w-6 h-auto inline"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/383px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
+            alt=""/>	&#x1F1EE;&#x1F1F3;
+          <span class="text-white pl-1 text-xs">Hindi</span>
+          </option>
+          <option value="3">&#x1F1F3;&#x1F1F1; <span class="text-white pl-1 text-xs">NetherLand</span></option>
+          <option value="4">&#x1F1EB;&#x1F1F7; <span class="text-white pl-1 text-xs">French</span></option>
+          <!-- <option value="5"><span class="text-white pl-1 text-xs">Deutsch</span></option> -->
+      </select>
+  </label>
+    <div class="nav-left pl-5">
+      <img src="./pictures/chai-suta-bar.png" class="w-[6rem]" alt="" />
+    </div>
+
+    <div class="nav-right flex flex-wrap">
+      <!-- <i class="fa-solid fa-bars min-[600px]:hidden"></i> -->
+      <ul class="list-none flex text-lg flex-wrap ">
+        <!-- max-[600px]:hidden  -->
+        <li class="pr-7"><a href="./index.html">Home</a></li>
+        <li class="pr-7"><a href="./aboutus.html">About Us</a></li>
+        <li class="pr-7"><a href="./Menu/menu.html">Menu</a></li>
+        <li class="pr-7"><a href="./franchise.html">Franchise</a></li>
+        <li class="pr-7"><a href="./careers.html">Careers</a></li>
+        <li class="pr-7"><a href="./gallery.html">Gallery</a></li>
+        <li class="pr-7"><a href="./blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>  
+<!-- nav end -->
+
+  <section class="gallery-intro">
+    <h1>
+      Check Out Our Gallery
+    </h1>
+    <p>
+      Take a Peek Inside Our Wonderworld
+    </p>
+  </section>
+
+  <div class="nav-container">
+    <nav class="gallery-nav">
+      <ul class="gallery-items">
+        <li><a href="gallery.html">ALL</a></li>
+        <li><a href="food-photography.html">FOOD PHOTOGRAPHY</a></li>
+        <li><a href="media.html">MEDIA COVERAGE</a></li>
+        <li><a href="outlet-photos.html">OUTLETS PHOTOS</a></li>
+        <li><a href="coming-soon-outlets.html">COMING SOON OUTLETS</a></li>
+      </ul>
+    </nav>  
+  </div>
+  
+  <div class="img-container">
+    <ul class="image-gallery" style="padding-left: 0;">
+      <li>
+        <a href="pictures/cs-1.png"><img src="pictures/cs-1.png" alt="first-pic"></a>
+        <div class="overlay-text"><span>Beawar</span></div>
+      </li>
+
+      <li>
+        <a href="pictures/cs-2.png"><img src="pictures/cs-2.png" alt="second-pic"></a>
+        <div class="overlay-text"><span>Mcleod Ganj</span></div>
+      </li>
+
+      <li>
+        <a href="pictures/cs-3.jpg"><img src="pictures/cs-3.jpg" alt="third-pic"></a>
+        <div class="overlay-text"><span>Gandhinagar</span></div>
+      </li>
+
+      <li>
+        <a href="pictures/cs-4.jpg"><img src="pictures/cs-4.jpg" alt="fourth-pic"></a>
+        <div class="overlay-text"><span>Mohali</span></div>
+      </li>
+
+      <li>
+        <a href="pictures/cs-5.png"><img src="pictures/cs-5.png" alt="fifth-pic"></a>
+        <div class="overlay-text"><span>Pathankot</span></div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- section -->
+  <section class="flex flex-col justify-center items-center gap-[1rem]">
+    <h4 class="text-[#b39a87] text-2xl">Want To Franchise With Us?</h4>
+    <h1 class="text-black text-4xl text-center font-bold">Request A Free Franchise Consultation</h1>
+    <button class="bg-[#672717] text-white px-[3rem] py-4 rounded-[6rem] mt-[1.5rem]">Apply Now</button>
+  </section>
+  <!-- section -->
+  <!-- footer start -->
+  <section class="footer w-full mt-[2rem] bg-[#672717]  ">
+    <div class="top flex justify-center gap-8 w-full pt-12 max-[700px]:flex-wrap">
+      <div class="w-[15rem] flex flex-col items-center justify-center gap-4 max-[700px]:flex-wrap max-[700px]:w-4/5">
+        <img class="w-20" src="./images/chai-suta-bar.png" alt="" />
+        <p class="text-white">
+          Chai Sutta Bar Is A Rapidly Growing Tea-Chain, Founded In 2016 By
+          Two Young & Passionate Entrepreneurs – Anubhav Dubey And Anand
+          Nayak.
+        </p>
+      </div>
+      <!-- head office -->
+      <div class="w-[15rem] flex flex-col justify-center gap-2 max-[600px]:flex-wrap max-[600px]:w-4/5">
+        <h1 class="text-white text-2xl font-bold">Head Office</h1>
+        <a target="_blank" href="https://www.google.com/maps/place/Chai+Sutta+Bar+Private+Limited+-+Head+Office/@22.7453475,75.8924399,15z/data=!4m6!3m5!1s0x3962fd4017b7581f:0x591a32ca4baa38d1!8m2!3d22.7453475!4d75.8924399!16s%2Fg%2F11tbz56sdz?entry=tts&shorturl=1">
+          <div class="flex items-center gap-2 text-white">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              1st Floor, Redsquare, PU3 Commercial Scheme no 54, Opposite C21
+              Mall, Indore, MP- 452001
+            </p>
+          </div>
+        </a>
+        <a href="tel:+916262300031">
+          <div class="flex items-center gap-2 text-white">
+            <i class="fa-solid fa-phone"></i>
+            <p>6262 3000 31</p>
+          </div>
+        </a>
+        <a href="mailto:info@chaisuttabarindia.com">
+          <div class="flex items-center gap-2 text-white">
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@chaisuttabarindia.com</p>
+          </div>
+        </a>
+        <a href="mailto:business@chaisuttabarindia.com">
+          <div class="flex items-center gap-2 text-white">
+            <i class="fa-regular fa-envelope"></i>
+            <p>business@chaisuttabarindia.com</p>
+          </div>
+        </a>
+      </div>
+      <!-- quick links -->
+      <div class="w-[10rem] flex flex-col gap-2 max-[600px]:flex-wrap max-[600px]:w-1/4">
+        <h1 class="text-white text-2xl font-bold">Quick Links</h1>
+        <ul class="flex flex-col items-start justify-start gap-1 text-white">
+          <a href=""><li>Contact</li></a>
+          <a href=""><li>FAQs</li></a>
+          <a href=""><li>Locations</li></a>
+          <a href=""><li>Privacy Policy</li></a>
+          <a href=""><li>Careers</li></a>
+          <a href=""><li>Blog</li></a>
+        </ul>
+      </div>
+      <div class="w-[20rem] flex flex-col gap-2 max-[600px]:flex-wrap max-[600px]:w-2/4">
+        <h1 class="text-white text-2xl font-bold">Subscribe Now</h1>
+        <div class="flex flex-col gap-4 text-white">
+          <input
+            type="text"
+            placeholder="Your-Email"
+            class="pl-2 h-9 rounded-lg"
+          />
+          <button
+            class="bg-[#3c3c3c] rounded-sm px-2 py-2 w-[6rem] hover:cursor-pointer hover:bg-black"
+          >
+            Submit
+          </button>
+          <div class="text-white flex gap-3 text-2xl pt-5">
+            <i class="fab fa-facebook cursor-pointer"></i>
+            <i class="fab fa-twitter cursor-pointer"></i>
+            <i class="fab fa-linkedin cursor-pointer"></i>
+            <i class="fab fa-youtube cursor-pointer"></i>
+            <i class="fab fa-instagram cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full text-white py-8 max-[600px]:flex-wrap">
+      <p class="text-center">Copyright ©2024 Chai Sutta Bar,</p>
+      <p class="text-center">
+        All rights reserved | Designed, Developed & Maintained by TMG
+      </p>
+    </div>
+  </section>
+  <!-- footer end -->
+</main>
+
+</body>
+</html>
