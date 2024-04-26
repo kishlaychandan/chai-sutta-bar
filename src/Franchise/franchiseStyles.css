@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media only screen and (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "nav" "cover" "image" "form" "wwr" "ta" "p" "fc" "bv" "youtube" "fofo" "model" "coco" "outlet1" "outlet2" "outlet3"
-                             "head" "owners" "footer" "f1";
-    }
-}
-
 body {
     height: 100vh;
     font-family: "Montserrat", sans-serif;
@@ -447,6 +438,7 @@ nav {
     height: 100%;
     position: relative;
 }
+
 .franchise-owners > .grid-container > .item2 {
     grid-area: image;
     background-color: #672717;
@@ -535,6 +527,126 @@ nav {
     grid-area: f1;
 }
 
+/*.container {
+	display: flex;
+	flex-direction: row;
+} */
+
+@media only screen and (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex ;
+    flex-direction: column;
+}
+
+.container > .coverPage > .cover-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .franchise-form > .grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .franchise-form > .grid-container > .item1 {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: auto;
+}
+
+.container > .franchise-form > .grid-container > .item2 {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(10%);
+}
+
+.franchise-form > .grid-container > .item2 > form > input[type=text] {
+  border-radius: 10px;
+  border: 1px solid #672717;
+  color: #672717;
+  width: 50%;
+  box-sizing: border-box;
+  /*padding: 10px;
+  margin-bottom: 10px; */
+  font-size: small;
+ /* transform: translateX(-30%); */
+}
+
+.franchise-form > .grid-container > .item1 > img {
+  transform: translateX(15%);
+}
+
+.franchise-form > .grid-container > .item2 > form {
+  transform: translateX(-10%);
+}
+
+.container > .why-we-rock > .grid-container {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .container > .yt-video {
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  width: auto;
+  }
+  
+  .franchise-owners > .grid-container > .item2 > .owner-image {
+    height: 70%;
+    width: 70%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    animation: scrollAnimation 20s linear infinite;
+}
+
+  .container > .franchise-models > .grid-container {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .container > .outlets > .outlet > .row {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  }
+  
+  .container > .outlets > .outlet > .row > .column {
+    transform: translateX(5%);
+  }
+
+  .container > .franchise-owners > .grid-container > .item1 {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-30%);
+  }
+  
+  .container > .footer {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .container > .footer > h3 { font-size: 20px; }
+
+  .container > .footer > h1 { font-size: 25px; }
+
+  .container > .footer > button { height: auto; width: 10rem; transform: translateX(125%); }
+
+  .container > .w-full {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
 
