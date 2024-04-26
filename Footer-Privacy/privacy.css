@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root{
+--black-text: #333333;
+--bkgd-color: #ffffff;
+}
+
+body{
+    font-family: "montserrat",sans-serif;
+    background-color: #ffffff;
+letter-spacing: 0.5px;
+
+}
+
+.box{
+    margin: 15rem 300px 3rem  300px;
+
+}
+
+.box > h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.box > p{
+text-align:justify;
+    font-size: 1rem;
+    margin: 1.3rem;
+    
+}
+
+.franchies{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bkgd-color);
+    display: flex;
+    margin: 0;
+}
+
+.footer{
+    margin-top: 0;
+
+}
+.apply{
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 1024px) {
+      .box{
+
+        margin: 10rem 30px 3rem 30px;
+   } 
+
+
+}
+
+@media  (max-width: 650px){
+    
+    :root{
+    font-size: 12px;
+    }
+    
+}

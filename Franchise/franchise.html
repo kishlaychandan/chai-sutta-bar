@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="franchiseStyles.css">
+    <link rel="stylesheet" href="./nav.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fastest Growing Chai Franchises</title>
 </head>
@@ -33,13 +35,13 @@
         </select>
     </label>
       <div class="nav-left pl-5">
-        <img src="./images/chai-suta-bar.png" class="w-[6rem]" alt="" />
+        <img src="./images/chai-sutta-bar.png" class="w-[6rem]" alt="" />
       </div>
 
-      <div class="nav-right flex flex-wrap">
-        <!-- <i class="fa-solid fa-bars min-[600px]:hidden"></i> -->
-        <ul class="list-none flex text-lg flex-wrap ">
-          <!-- max-[600px]:hidden  -->
+      <div class="nav-right navigation flex flex-wrap items-center">
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>        
+        <ul class="menu list-none flex text-lg flex-wrap justify-center transition duration-500">
           <li class="pr-7"><a href="../index.html">Home</a></li>
           <li class="pr-7"><a href="../About/about.html">About Us</a></li>
           <li class="pr-7"><a href="../Menu/menu.html">Menu</a></li>
@@ -195,18 +197,17 @@
           </div>
     </section>
 
-    <section class="footer" style="text-align: center;">
-        <br> 
-        <h3>Want To Franchise With Us?</h3>
-        <h1>Request A Free Franchise Consultation</h1>
-        <button class="button button1">Apply Now</button> <br> <br>
-    </section>
+    <div class="footer" style="background-color: whitesmoke;"> <br> <br> <br>
+      <p style="text-align: center; color: #928781; font-size: large; font-weight: bold;">Want To Franchise With Us?</p>
+      <h1 style="text-align: center; color: black; font-size: 2rem; font-weight: bold;">Request A Free Franchise Consultation</h1> <br>
+      <button class="button button1">Apply Now</button> <br> <br>
+  </div>
     
     <!-- Footer start -->
     <section class="footer w-full mt-[2rem] bg-[#672717]  ">
       <div class="top flex justify-center gap-8 w-full pt-12 max-[700px]:flex-wrap">
         <div class="w-[15rem] flex flex-col items-center justify-center gap-4 max-[700px]:flex-wrap max-[700px]:w-4/5">
-          <img class="w-20" src="./images/chai-suta-bar.png" alt="" />
+          <img class="w-20" src="./images/chai-sutta-bar.png" alt="" />
           <p class="text-white">
             Chai Sutta Bar Is A Rapidly Growing Tea-Chain, Founded In 2016 By
             Two Young & Passionate Entrepreneurs – Anubhav Dubey And Anand
@@ -252,7 +253,7 @@
             <a href=""><li>FAQs</li></a>
             <a href=""><li>Locations</li></a>
             <a href=""><li>Privacy Policy</li></a>
-            <a href=""><li>Careers</li></a>
+            <a href="../Footer-Careers/careers.html"><li>Careers</li></a>
             <a href="../Blog/blog.html"><li>Blog</li></a>
           </ul>
         </div>

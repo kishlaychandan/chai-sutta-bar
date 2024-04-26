@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="gallery.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./careersStyles.css">
+    <link rel="stylesheet" href="./nav.css">
+    
+    <title>Apply Now - Chai Sutta Bar</title>
 </head>
 <body>
-
-<main>
-  <!-- nav start -->
-        <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-full h-28 bg-white">
+    <!-- nav start -->
+    <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-full h-28 bg-white">
+        <!-- language -->
+        
+  
         <label for="" class="language fixed top-0.5 right-32">
           <select name="course" id="course" class="bg-[#672717] w-[10rem] text-white border-none">
               <option value="1">
@@ -34,95 +33,105 @@
           </select>
       </label>
         <div class="nav-left pl-5">
-          <img src="./pictures/chai-suta-bar.png" class="w-[6rem]" alt="" />
+          <img src="./images/chai-sutta-bar.png" class="w-[6rem]" alt="" />
         </div>
   
-        <div class="nav-right flex flex-wrap">
-          <!-- <i class="fa-solid fa-bars min-[600px]:hidden"></i> -->
-          <ul class="list-none flex text-lg flex-wrap ">
-            <!-- max-[600px]:hidden  -->
+        <div class="nav-right navigation flex flex-wrap items-center">
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger"></div>        
+            <ul class="menu list-none flex text-lg flex-wrap justify-center transition duration-500">
             <li class="pr-7"><a href="../index.html">Home</a></li>
             <li class="pr-7"><a href="../About/about.html">About Us</a></li>
             <li class="pr-7"><a href="../Menu/menu.html">Menu</a></li>
-            <li class="pr-7"><a href="../Franchise/franchise.html">Franchise</a></li>
+            <li class="pr-7"><a href="./franchise.html">Franchise</a></li>
             <li class="pr-7"><a href="../careers.html">Careers</a></li>
-            <li class="pr-7"><a href="./gallery.html">Gallery</a></li>
+            <li class="pr-7"><a href="../Gallery/gallery.html">Gallery</a></li>
             <li class="pr-7"><a href="../Blog/blog.html">Blog</a></li>
           </ul>
         </div>
-      </nav>  
-  <!-- nav end -->
+      </nav>
+      <!-- Nav-End -->
 
-  <section class="gallery-intro">
-    <h1>
-      Check Out Our Gallery
-    </h1>
-    <p>
-      Take a Peek Inside Our Wonderworld
-    </p>
-  </section>
+    <div class="careers-form" style="margin-top: 7rem;">
+    <div class="Apply-Now">Apply Now</div>
+<div class="container">
+    <h1 style="text-align: center; font-size: larger; font-weight: bolder;">We Want You To Have Fun While Working. Want To Join Us?</h1> <br>
+    <form action="https://example.com/submit_application" method="post" enctype="multipart/form-data" class="form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="contactno">Contact No. *</label>
+                <input type="tel" id="contactno" name="contactno" placeholder="Contact No." required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address *</label>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="careertype">Career Type *</label>
+                <select id="careertype" name="careertype" required>
+                    <option value="fulltime">Full Time</option>
+                    <option value="graphicdesigner">Internship</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="careertype1">Career Type *</label>
+                <select id="careertype1" name="careertype1">
+                    <option value="fulltime">Full Time</option>
+                    <option value="graphicdesigner">Graphic Designer</option>
+                    <option value="videoeditor">Video Editor</option>
+                    <option value="wevdev">Web Developer</option>
+                    <option value="seoexpert">SEO Expert</option>
+                    <option value="ssm">Social Media Manager</option>
+                    <option value="a">Accountant</option>
+                    <option value="bdm">Business Development Manager</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="resume">Resume *</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" placeholder="Resume" required>
+            </div>
+            <div class="form-group">
+                <label for="portfoliolink">Portfolio Link</label>
+                <input type="url" id="portfoliolink" name="portfoliolink" placeholder="Portfolio Link" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="3" placeholder=" Message" required></textarea>
+            </div> 
+        </div> <br><br><br>
+        <div class="form-group">
+            <input type="submit" value="Submit"> 
+        </div>
+    </form>
+    
+</div>
 
-  <div class="nav-container">
-    <nav class="gallery-nav">
-      <ul class="gallery-items">
-        <li><a href="gallery.html">ALL</a></li>
-        <li><a href="food-photography.html">FOOD PHOTOGRAPHY</a></li>
-        <li><a href="media.html">MEDIA COVERAGE</a></li>
-        <li><a href="outlet-photos.html">OUTLETS PHOTOS</a></li>
-        <li><a href="coming-soon-outlets.html">COMING SOON OUTLETS</a></li>
-      </ul>
-    </nav>  
-  </div>
-  
-  <div class="img-container">
-    <ul class="image-gallery" style="padding-left: 0;">
-      <li>
-        <a href="pictures/maggie.jpg"><img src="pictures/maggie.jpg" alt="maggie"></a>
-        <div class="overlay-text"><span>Maggie</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/maska-bun.jpg"><img src="pictures/maska-bun.jpg" alt="maska-bun"></a>
-        <div class="overlay-text"><span>Tea with Maska Bun</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/masala-tea.jpg"><img src="pictures/masala-tea.jpg" alt="masala-tea"></a>
-        <div class="overlay-text"><span>Masala Tea</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/pizza.png"><img src="pictures/pizza.png" alt="pizza"></a>
-        <div class="overlay-text"><span>Pizza</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/cold-coffee.jpg"><img src="pictures/cold-coffee.jpg" alt="cold-coffee"></a>
-        <div class="overlay-text"><span>Cold Coffee with Ice Cream</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/cheese-sandwich.png"><img src="pictures/cheese-sandwich.png" alt="cheese-sandwich"></a>
-        <div class="overlay-text"><span>Cheese Sandwich</span></div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="btn-loadmore">
-    <button class="load-more">Load More</button>
-  </div>
-  <!-- section -->
-  <section class="flex flex-col justify-center items-center gap-[1rem]">
-    <h4 class="text-[#b39a87] text-2xl">Want To Franchise With Us?</h4>
-    <h1 class="text-black text-4xl text-center font-bold">Request A Free Franchise Consultation</h1>
-    <button class="bg-[#672717] text-white px-[3rem] py-4 rounded-[6rem] mt-[1.5rem]">Apply Now</button>
-  </section>
-  <!-- section -->
-  <!-- footer start -->
-  <section class="footer w-full mt-[2rem] bg-[#672717]  ">
+<div class="footer" style="background-color: whitesmoke;"> <br> <br> <br>
+    <p style="text-align: center; color: #928781; font-size: large; font-weight: bold;">Want To Franchise With Us?</p>
+    <h1 style="text-align: center; color: black; font-size: 2rem; font-weight: bold;">Request A Free Franchise Consultation</h1> <br>
+    <button class="button button1">Apply Now</button> <br> <br>
+</div>
+<!-- Footer start -->
+<section class="footer w-full mt-[2rem] bg-[#672717]  ">
     <div class="top flex justify-center gap-8 w-full pt-12 max-[700px]:flex-wrap">
       <div class="w-[15rem] flex flex-col items-center justify-center gap-4 max-[700px]:flex-wrap max-[700px]:w-4/5">
-        <img class="w-20" src="./images/chai-suta-bar.png" alt="" />
+        <img class="w-20" src="./images/chai-sutta-bar.png" alt="" />
         <p class="text-white">
           Chai Sutta Bar Is A Rapidly Growing Tea-Chain, Founded In 2016 By
           Two Young & Passionate Entrepreneurs – Anubhav Dubey And Anand
@@ -168,7 +177,7 @@
           <a href=""><li>FAQs</li></a>
           <a href=""><li>Locations</li></a>
           <a href=""><li>Privacy Policy</li></a>
-          <a href="../Footer-Careers/careers.html"><li>Careers</li></a>
+          <a href="./careers.html"><li>Careers</li></a>
           <a href="../Blog/blog.html"><li>Blog</li></a>
         </ul>
       </div>
@@ -202,8 +211,9 @@
       </p>
     </div>
   </section>
-  <!-- footer end -->
-</main>
+  <!-- Footer End -->
+
+</div>
 
 </body>
 </html>

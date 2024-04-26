@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="gallery.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faqs-chaisuttabar</title>
+<link rel="stylesheet" href="faq.css ">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="nav.css">
 </head>
+
 <body>
 
-<main>
-  <!-- nav start -->
-        <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-full h-28 bg-white">
+<!--nav bar-->
+    <!-- nav start -->
+    <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-full h-28 bg-white">
         <label for="" class="language fixed top-0.5 right-32">
           <select name="course" id="course" class="bg-[#672717] w-[10rem] text-white border-none">
               <option value="1">
@@ -34,92 +33,132 @@
           </select>
       </label>
         <div class="nav-left pl-5">
-          <img src="./pictures/chai-suta-bar.png" class="w-[6rem]" alt="" />
+          <img src="img/chai-suta-bar.png" class="w-[6rem]" alt="logo" />
         </div>
-  
-        <div class="nav-right flex flex-wrap">
-          <!-- <i class="fa-solid fa-bars min-[600px]:hidden"></i> -->
-          <ul class="list-none flex text-lg flex-wrap ">
+      
+        <div class="nav-right navigation flex flex-wrap items-center">
+          <input type="checkbox" class="toggle-menu">
+          <div class="hamburger"></div>        
+          <ul class="menu list-none flex text-lg flex-wrap justify-center transition duration-500">
             <!-- max-[600px]:hidden  -->
             <li class="pr-7"><a href="../index.html">Home</a></li>
             <li class="pr-7"><a href="../About/about.html">About Us</a></li>
             <li class="pr-7"><a href="../Menu/menu.html">Menu</a></li>
             <li class="pr-7"><a href="../Franchise/franchise.html">Franchise</a></li>
             <li class="pr-7"><a href="../careers.html">Careers</a></li>
-            <li class="pr-7"><a href="./gallery.html">Gallery</a></li>
+            <li class="pr-7"><a href="../Gallery/gallery.html">Gallery</a></li>
             <li class="pr-7"><a href="../Blog/blog.html">Blog</a></li>
           </ul>
         </div>
-      </nav>  
-  <!-- nav end -->
+      </nav>
+      <!-- Nav-End -->
 
-  <section class="gallery-intro">
-    <h1>
-      Check Out Our Gallery
-    </h1>
+
+      <div class="head"><h1>FAQs</h1></div>
+
+<section class="whole">
+  <div class="line"><h2>Here, are some common queries regarding our franchise.
+    <br>
+    For more details, you can always contact us through mail or number.</h2></div>
+    <br>
+    
+<div class="question-answer">
+
+<div class="boxes">
+  <button class="question">
+    What is the cost of one outlet?
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+  <div class="answer">
     <p>
-      Take a Peek Inside Our Wonderworld
+      Costing of each outlet depends upon location and city of where the outlet is going to be opened.
     </p>
-  </section>
-
-  <div class="nav-container">
-    <nav class="gallery-nav">
-      <ul class="gallery-items">
-        <li><a href="gallery.html">ALL</a></li>
-        <li><a href="food-photography.html">FOOD PHOTOGRAPHY</a></li>
-        <li><a href="media.html">MEDIA COVERAGE</a></li>
-        <li><a href="outlet-photos.html">OUTLETS PHOTOS</a></li>
-        <li><a href="coming-soon-outlets.html">COMING SOON OUTLETS</a></li>
-      </ul>
-    </nav>  
   </div>
+  </div>
+
+  <div class="boxes">
+    <button class="question">
+      What is the token money for CSB franchise?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="answer">
+      <p>
+        The token money of approx 2 Lakh will be required to buy Chai Sutta Bar Franchise which is non-refundable.
+      </p>
+    </div>
+    </div>
+
+
+    <div class="boxes">
+      <button class="question">
+        What is the process of acquiring franchisee?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="answer">
+        <p>
+          We would love to have you join our CSB family! Joining our family gives you the opportunity to be your own boss.
+          <ol>
+          <li>1. Deposition of Token Money</li>
+          <li>2. Visit of R&D Team for location setting</li>
+          <li>3. Finalizing of Agreements & License</li>
+          <li>4. 15-20 days Training of Staff at Headquarter</li>
+          <li>5. Opening of Outlet and Management as per our Standard</li>
+        </ol>
+        </p>
+      </div>
+      </div>
+      
+
+      <div class="boxes">
+        <button class="question">
+          How much is the royalty fee?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="answer">
+          <p>
+            CSB franchisees pay 4% of their sales per month as royalty fee.
+          </p>
+        </div>
+</div>
+</div>
+</section>
+
+
+<script>
+  var acc = document.getElementsByClassName("question");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      this.parentElement.classList.toggle("active");
+
+      var answer = this.nextElementSibling;
+
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    });
+  }
+</script>
+
+<!--footer-->
+  <!--franchies part-->
+
+<!--franchies part-->
+
+<section class=" franchies flex flex-col justify-center items-center gap-[1rem]">
+  <h4 class="text-[#b39a87] text-2xl ">Want To Franchise With Us?</h4>
+  <h1 class="text-black text-4xl text-center font-bold">Request A Free Franchise Consultation</h1>
+  <button class=" apply bg-[#672717] text-white px-[3rem] py-4 rounded-[6rem] mt-[1.5rem]">Apply Now</button>
+</section>
+
+
   
-  <div class="img-container">
-    <ul class="image-gallery" style="padding-left: 0;">
-      <li>
-        <a href="pictures/maggie.jpg"><img src="pictures/maggie.jpg" alt="maggie"></a>
-        <div class="overlay-text"><span>Maggie</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/maska-bun.jpg"><img src="pictures/maska-bun.jpg" alt="maska-bun"></a>
-        <div class="overlay-text"><span>Tea with Maska Bun</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/masala-tea.jpg"><img src="pictures/masala-tea.jpg" alt="masala-tea"></a>
-        <div class="overlay-text"><span>Masala Tea</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/pizza.png"><img src="pictures/pizza.png" alt="pizza"></a>
-        <div class="overlay-text"><span>Pizza</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/cold-coffee.jpg"><img src="pictures/cold-coffee.jpg" alt="cold-coffee"></a>
-        <div class="overlay-text"><span>Cold Coffee with Ice Cream</span></div>
-      </li>
-
-      <li>
-        <a href="pictures/cheese-sandwich.png"><img src="pictures/cheese-sandwich.png" alt="cheese-sandwich"></a>
-        <div class="overlay-text"><span>Cheese Sandwich</span></div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="btn-loadmore">
-    <button class="load-more">Load More</button>
-  </div>
-  <!-- section -->
-  <section class="flex flex-col justify-center items-center gap-[1rem]">
-    <h4 class="text-[#b39a87] text-2xl">Want To Franchise With Us?</h4>
-    <h1 class="text-black text-4xl text-center font-bold">Request A Free Franchise Consultation</h1>
-    <button class="bg-[#672717] text-white px-[3rem] py-4 rounded-[6rem] mt-[1.5rem]">Apply Now</button>
-  </section>
-  <!-- section -->
-  <!-- footer start -->
-  <section class="footer w-full mt-[2rem] bg-[#672717]  ">
+  <!-- Footer start -->
+  <section class="footer w-full  bg-[#672717]  ">
     <div class="top flex justify-center gap-8 w-full pt-12 max-[700px]:flex-wrap">
       <div class="w-[15rem] flex flex-col items-center justify-center gap-4 max-[700px]:flex-wrap max-[700px]:w-4/5">
         <img class="w-20" src="./images/chai-suta-bar.png" alt="" />
@@ -165,9 +204,9 @@
         <h1 class="text-white text-2xl font-bold">Quick Links</h1>
         <ul class="flex flex-col items-start justify-start gap-1 text-white">
           <a href=""><li>Contact</li></a>
-          <a href=""><li>FAQs</li></a>
+          <a href="../Footer-FAQ/faq.html"><li>FAQs</li></a>
           <a href=""><li>Locations</li></a>
-          <a href=""><li>Privacy Policy</li></a>
+          <a href="../Footer-Privacy/privacy.html"><li>Privacy Policy</li></a>
           <a href="../Footer-Careers/careers.html"><li>Careers</li></a>
           <a href="../Blog/blog.html"><li>Blog</li></a>
         </ul>
@@ -202,8 +241,6 @@
       </p>
     </div>
   </section>
-  <!-- footer end -->
-</main>
-
+  <!-- Footer End -->
 </body>
 </html>

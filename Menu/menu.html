@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../nav.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -32,9 +33,10 @@
     <img src="img/chai-suta-bar.png" class="w-[6rem]" alt="" />
   </div>
 
-  <div class="nav-right flex flex-wrap">
-    <!-- <i class="fa-solid fa-bars min-[600px]:hidden"></i> -->
-    <ul class="list-none flex text-lg flex-wrap ">
+  <div class="nav-right navigation flex flex-wrap items-center">
+    <input type="checkbox" class="toggle-menu">
+    <div class="hamburger"></div>        
+    <ul class="menu list-none flex text-lg flex-wrap justify-center transition duration-500">
       <!-- max-[600px]:hidden  -->
       <li class="pr-7"><a href="../index.html">Home</a></li>
       <li class="pr-7"><a href="../About/about.html">About Us</a></li>
@@ -133,7 +135,7 @@
         <a href=""><li>FAQs</li></a>
         <a href=""><li>Locations</li></a>
         <a href=""><li>Privacy Policy</li></a>
-        <a href=""><li>Careers</li></a>
+        <a href="../Footer-Careers/careers.html"><li>Careers</li></a>
         <a href="../Blog/blog.html"><li>Blog</li></a>
       </ul>
     </div>

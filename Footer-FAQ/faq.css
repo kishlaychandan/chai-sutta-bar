@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root{
+--black-text: #333333;
+--bkgd-color: #ffffff;
+--bkgrey:#f4f0ee;
+}
+
+body{
+    font-family: "montserrat",sans-serif;
+    background-color: #ffffff;
+
+}
+
+.head{
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    height: 12rem;
+    background-color: #672717;
+    font-family: "montserrat",sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.head > h1{
+    background-color: #672717;
+    color: var(--bkgd-color);
+    font-size: 48px;
+    font-weight:bold;
+    text-decoration: underline;
+    text-align: center;
+}
+.whole{
+    margin: 100px 0;
+    max-width: 75%;
+    margin-inline:auto;
+    padding-inline: 20px;
+    /* border: 2px solid black; */
+    font-family: "montserrat",sans-serif;
+}
+
+.line{
+background-color: var(--bkgd-color);
+display: flex;
+font-family: "montserrat",sans-serif;
+padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.line > h2{
+    color: #672717;
+    font-family: "montserrat",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.boxes {
+  border: 1px solid #f4f0ee;
+  margin: 2px 150px;
+}
+
+.question {
+    background-color:#f4f0ee;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  
+  }
+  
+  .question i {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .active,
+  .question:hover {
+    background-color: #f4f0ee;
+    color:#672717
+  }
+
+  ol{
+    padding-left: 3px;
+  }
+  .answer {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: var(--bkgd-color);
+    overflow: hidden;
+    display: none;
+  }
+  .answer p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  
+  .boxes.active {
+    border: none;
+  }
+  
+
+
+
+.franchies{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bkgrey);
+    display: flex;
+    margin: 0px;
+}
+
+.footer{
+    margin-top: 0;
+
+}
+.apply{
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+
+  .boxes{
+
+       margin: 2px 20px;
+  } 
+
+}
+
+@media  (max-width: 650px){
+    
+  :root{
+  font-size: 12px;
+  }
+  
+}
