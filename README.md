@@ -11,7 +11,7 @@ Welcome to the official website of CHAI-SUTTA-BAR, your go-to destination for de
 5. [Careers](./careers.html)
 6. [Gallery](./Gallery/gallery.html)
 7. [Blog](./Blog/blog.html)
-8. [Contact](./contact-footer/contact.html)
+8. [Contact](./contact-fotter/contact.html)
 9. [Location](#location)
 10. [Privacy Policy](./Footer-Privacy/privacy.html)
 11. [FAQ](./Footer-FAQ/faq.html)
