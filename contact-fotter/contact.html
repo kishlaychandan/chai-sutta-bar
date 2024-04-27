@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="gallery.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-fotter</title>
+    <link rel="stylesheet" href="contact.css ">
+    <link rel="stylesheet" href="nav.css">
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
-<main>
-  <!-- nav start -->
-        <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-full h-28 bg-white">
+
+    
+<!--nav bar-->
+    <!-- nav start -->
+    <nav class="z-10 flex justify-between items-center fixed top-0 left-0 w-full h-28 bg-white">
         <label for="" class="language fixed top-0.5 right-32">
           <select name="course" id="course" class="bg-[#672717] w-[10rem] text-white border-none">
               <option value="1">
@@ -34,95 +34,107 @@
           </select>
       </label>
         <div class="nav-left pl-5">
-          <img src="./pictures/chai-suta-bar.png" class="w-[6rem]" alt="" />
+          <img src="img/logo.jpg" class="w-[6rem]" alt="logo" />
         </div>
-  
-        <div class="nav-right flex flex-wrap">
-          <!-- <i class="fa-solid fa-bars min-[600px]:hidden"></i> -->
-          <ul class="list-none flex text-lg flex-wrap ">
+
+        <div class="nav-right navigation flex flex-wrap items-center">
+          <input type="checkbox" class="toggle-menu">
+          <div class="hamburger"></div>        
+          <ul class="menu list-none flex text-lg flex-wrap justify-center transition duration-500">
             <!-- max-[600px]:hidden  -->
             <li class="pr-7"><a href="../index.html">Home</a></li>
             <li class="pr-7"><a href="../About/about.html">About Us</a></li>
             <li class="pr-7"><a href="../Menu/menu.html">Menu</a></li>
             <li class="pr-7"><a href="../Franchise/franchise.html">Franchise</a></li>
             <li class="pr-7"><a href="../careers.html">Careers</a></li>
-            <li class="pr-7"><a href="./gallery.html">Gallery</a></li>
+            <li class="pr-7"><a href="../Gallery/gallery.html">Gallery</a></li>
             <li class="pr-7"><a href="../Blog/blog.html">Blog</a></li>
           </ul>
         </div>
-      </nav>  
-  <!-- nav end -->
+      </nav>
+      <!-- Nav-End -->
 
-  <section class="gallery-intro">
-    <h1>
-      Check Out Our Gallery
-    </h1>
-    <p>
-      Take a Peek Inside Our Wonderworld
-    </p>
-  </section>
 
-  <div class="nav-container">
-    <nav class="gallery-nav">
-      <ul class="gallery-items">
-        <li><a href="gallery.html">ALL</a></li>
-        <li><a href="food-photography.html">FOOD PHOTOGRAPHY</a></li>
-        <li><a href="media.html">MEDIA COVERAGE</a></li>
-        <li><a href="outlet-photos.html">OUTLETS PHOTOS</a></li>
-        <li><a href="coming-soon-outlets.html">COMING SOON OUTLETS</a></li>
-      </ul>
-    </nav>  
-  </div>
+      <div class="heading">
+        <h1>Let's Talk</h1>
+        <h2>We're Here</h2>
+      </div>
+<section class="bo"> 
+<div class="part1">
+  <span>Our Location</span>
+  <p>We May Be Just A Click Away Find nearest Outlet</p>
+  <button class="click">Find Nearest Outlet</button>
+</div>
+
+<div class="vl"></div>
+
+<div class="part2">
+  <span>Get In Touch</span>
+  <p>+91 6262 3000 31</p>
+  <p>info@chaisuttabarindia.com</p>
+  <p>business@chaisuttabarindia.com</p>
+</div>
+</section>
+
+<section class="map">
+<div class="boxes1">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.5320800099594!2d75.8898703747621!3d22.745627026607515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd4017b7581f%3A0x591a32ca4baa38d1!2sChai%20Sutta%20Bar%20Private%20Limited%20-%20Head%20Office!5e0!3m2!1sen!2sin!4v1714163124316!5m2!1sen!2sin" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="boxes2">
+    <div class="nm">
+         <h1>Touch Base With Us!</h1>
+         <p>For all enquiries, Please email us using form below!</p>
+    </div>
+    <div class="form-s">
+        
+            <label for="Name">Full Name </label>
+            <input type="text" id="Name" name="Name" placeholder="Full Name" required>
+        
+            <label for="Contact Number">Contact Number</label>
+           <input type="tel" id="Contact Number" name="Contact Number" placeholder="Contact No." required>
+        
+
+        
+            <label for="Email">Email </label>
+            <input type="Email" id="Email" name="Email" placeholder="Email" required>
   
-  <div class="img-container">
-    <ul class="image-gallery" style="padding-left: 0;">
-      <li>
-        <a href="pictures/maggie.jpg"><img src="pictures/maggie.jpg" alt="maggie"></a>
-        <div class="overlay-text"><span>Maggie</span></div>
-      </li>
 
-      <li>
-        <a href="pictures/maska-bun.jpg"><img src="pictures/maska-bun.jpg" alt="maska-bun"></a>
-        <div class="overlay-text"><span>Tea with Maska Bun</span></div>
-      </li>
+        
+          <label for="Message">Message</label>
+          <input type="text" id="Message" name="Message" placeholder="Message" required>
+          
+          <button id="Submit">Send</button>
+    </div>
+  
+</div>
+</section>
 
-      <li>
-        <a href="pictures/masala-tea.jpg"><img src="pictures/masala-tea.jpg" alt="masala-tea"></a>
-        <div class="overlay-text"><span>Masala Tea</span></div>
-      </li>
 
-      <li>
-        <a href="pictures/pizza.png"><img src="pictures/pizza.png" alt="pizza"></a>
-        <div class="overlay-text"><span>Pizza</span></div>
-      </li>
 
-      <li>
-        <a href="pictures/cold-coffee.jpg"><img src="pictures/cold-coffee.jpg" alt="cold-coffee"></a>
-        <div class="overlay-text"><span>Cold Coffee with Ice Cream</span></div>
-      </li>
 
-      <li>
-        <a href="pictures/cheese-sandwich.png"><img src="pictures/cheese-sandwich.png" alt="cheese-sandwich"></a>
-        <div class="overlay-text"><span>Cheese Sandwich</span></div>
-      </li>
-    </ul>
-  </div>
 
-  <div class="btn-loadmore">
-    <button class="load-more">Load More</button>
-  </div>
-  <!-- section -->
-  <section class="flex flex-col justify-center items-center gap-[1rem]">
+
+
+
+<!--footer-->
+  <!--franchies part-->
+
+<!--franchies part-->
+
+<section class=" franchies flex flex-col justify-center items-center gap-[1rem]">
     <h4 class="text-[#b39a87] text-2xl">Want To Franchise With Us?</h4>
     <h1 class="text-black text-4xl text-center font-bold">Request A Free Franchise Consultation</h1>
-    <button class="bg-[#672717] text-white px-[3rem] py-4 rounded-[6rem] mt-[1.5rem]">Apply Now</button>
+    <button class=" apply bg-[#672717] text-white px-[3rem] py-4 rounded-[6rem] mt-[1.5rem]">Apply Now</button>
   </section>
-  <!-- section -->
-  <!-- footer start -->
+  
+  
+  
+  
+  <!-- Footer start -->
   <section class="footer w-full mt-[2rem] bg-[#672717]  ">
     <div class="top flex justify-center gap-8 w-full pt-12 max-[700px]:flex-wrap">
       <div class="w-[15rem] flex flex-col items-center justify-center gap-4 max-[700px]:flex-wrap max-[700px]:w-4/5">
-        <img class="w-20" src="./images/chai-suta-bar.png" alt="" />
+        <img class="w-20" src="./img/logo.jpg" alt="" />
         <p class="text-white">
           Chai Sutta Bar Is A Rapidly Growing Tea-Chain, Founded In 2016 By
           Two Young & Passionate Entrepreneurs – Anubhav Dubey And Anand
@@ -202,8 +214,6 @@
       </p>
     </div>
   </section>
-  <!-- footer end -->
-</main>
-
+  <!-- Footer End -->
 </body>
 </html>
