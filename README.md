@@ -1,4 +1,3 @@
-
 # CHAI-SUTTA-BAR Website [CHAI-SUTTA-BAR Website](https://kishlaychandan.github.io/chai-sutta-bar/)
 
 Welcome to CHAI-SUTTA-BAR, your go-to destination for delightful chai and tasty snacks. 
